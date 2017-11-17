@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 50554102607574192}
   - component: {fileID: 58667656317911168}
   - component: {fileID: 114627448787680796}
-  - component: {fileID: 114827780412475220}
   m_Layer: 0
   m_Name: Simple UFO
   m_TagString: Baddie
@@ -91,18 +90,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 10
---- !u!114 &114827780412475220
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1415564376739574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e3e6784aa21e42bbaa59b210cb124f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!212 &212176803391048446
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -112,6 +99,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -127,6 +115,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

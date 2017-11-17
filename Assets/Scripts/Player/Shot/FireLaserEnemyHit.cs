@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHit : MonoBehaviour
+public class FireLaserEnemyHit : MonoBehaviour
 {
+	public float damage = 1f;
+
+	void SetDamage (float newDamageValue)
+	{
+		damage = newDamageValue;
+	}
+
 	void OnTriggerEnter2D (Collider2D target)
 	{
 		if (target.gameObject.CompareTag ("Baddie")) {
-			target.gameObject.SendMessage ("ApplyDamage", 10.0f);
+			target.gameObject.SendMessage ("ApplyDamage", damage);
 			Destroy (gameObject);
 		}
 	}
