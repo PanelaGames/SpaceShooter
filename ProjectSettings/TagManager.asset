@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Player Shot
   - Baddie
+  - Game Over Text
   layers:
   - Default
   - TransparentFX

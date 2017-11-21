@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50554102607574192}
   - component: {fileID: 58667656317911168}
   - component: {fileID: 114627448787680796}
+  - component: {fileID: 114510300485377694}
   m_Layer: 0
   m_Name: Simple UFO
   m_TagString: Baddie
@@ -78,6 +79,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.455
+--- !u!114 &114510300485377694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1415564376739574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f8f6fc2f437d43a5bc8809c0ebb8f01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114627448787680796
 MonoBehaviour:
   m_ObjectHideFlags: 1

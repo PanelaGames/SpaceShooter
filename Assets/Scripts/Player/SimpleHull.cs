@@ -6,10 +6,18 @@ public class SimpleHull : MonoBehaviour
 {
 	public float hitPoints = 200f;
 
+	private GameObject canvas;
+
+	void Awake ()
+	{
+		canvas = GameObject.Find ("Canvas");
+	}
+
 	void LateUpdate ()
 	{
 		if (hitPoints <= 0f) {
 			Destroy (gameObject);
+			canvas.SendMessage ("ShowGameOver");
 		}
 	}
 
