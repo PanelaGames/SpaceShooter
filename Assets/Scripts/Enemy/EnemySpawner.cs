@@ -7,7 +7,6 @@ public class EnemySpawner : MonoBehaviour
 	public GameObject simpleUfo;
 	public List<GameObject> enemyList = new List<GameObject> ();
 
-	private int currentWave = 0;
 	private float nextWaveSpawnTimer = 2f;
 
 	void Update ()
