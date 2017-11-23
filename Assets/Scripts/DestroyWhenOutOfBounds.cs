@@ -14,8 +14,6 @@ public class DestroyWhenOutOfBounds : MonoBehaviour
 				                      mainCamera.pixelHeight
 			                      )
 		                      );
-		Debug.Log (topLeft);
-		Debug.Log (bottomRight);
 		transform.localScale = (bottomRight - topLeft) / 2;
 	}
 
