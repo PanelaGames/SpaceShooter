@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SelfDestructAfterParticleSystemDuration : MonoBehaviour
+[RequireComponent(typeof(AudioSource))]
+public class SelfDestructAfterAudioDuration : MonoBehaviour
 {
     public void Start()
     {
         StartCoroutine(SelfDestruct());
     }
-
     public IEnumerator SelfDestruct()
     {
-        yield return new WaitForSeconds(GetComponent<ParticleSystem>().main.duration);
+        yield return new WaitForSeconds(GetComponent<AudioSource>().clip.length);
         Destroy(gameObject);
     }
 }

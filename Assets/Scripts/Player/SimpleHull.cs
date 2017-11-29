@@ -2,16 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class SimpleHull : MonoBehaviour
 {
     public float hitPoints = 200f;
     public GameObject playerExplosionPrefab;
 
     private GameObject canvas;
+    private AudioSource damageAudio;
 
     void Awake()
     {
         canvas = GameObject.Find("Canvas");
+        damageAudio = GetComponent<AudioSource>();
     }
 
     void LateUpdate()
@@ -26,6 +29,7 @@ public class SimpleHull : MonoBehaviour
 
     public void ApplyDamage(float amount)
     {
+        damageAudio.Play();
         hitPoints -= amount;
     }
 
