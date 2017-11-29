@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlashOnDamage : MonoBehaviour
+public class EnemyFlashOnDamage : MonoBehaviour
 {
     private Color color = Color.white;
     private SpriteRenderer spriteRenderer;
