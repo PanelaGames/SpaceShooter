@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114510300485377694}
   - component: {fileID: 114348516178940476}
   - component: {fileID: 82900483305823802}
+  - component: {fileID: 114812137609631338}
   m_Layer: 0
   m_Name: Simple UFO
   m_TagString: Baddie
@@ -197,6 +198,17 @@ MonoBehaviour:
   hitPoints: 10
   explosionPrefab: {fileID: 1299563183131790, guid: 53f6b245d39ce4d3a9943021214eccad,
     type: 2}
+--- !u!114 &114812137609631338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1415564376739574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd47cc091406c4d32abe364c6fabadd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212176803391048446
 SpriteRenderer:
   m_ObjectHideFlags: 1

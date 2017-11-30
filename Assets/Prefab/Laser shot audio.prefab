@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4413506212369276}
   - component: {fileID: 82184516800774536}
   - component: {fileID: 114739130334578018}
+  - component: {fileID: 114166217145992708}
   m_Layer: 0
   m_Name: Laser shot audio
   m_TagString: Untagged
@@ -121,6 +122,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114166217145992708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1433134246226956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd47cc091406c4d32abe364c6fabadd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114739130334578018
 MonoBehaviour:
   m_ObjectHideFlags: 1
