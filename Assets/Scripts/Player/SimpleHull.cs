@@ -23,6 +23,7 @@ public class SimpleHull : MonoBehaviour
         {
             Instantiate(playerExplosionPrefab, transform.position, transform.rotation);
             Destroy(gameObject);
+            GameObject.Find("Stage background music").GetComponent<AudioSource>().Stop();
             canvas.SendMessage("ShowGameOver");
         }
     }
